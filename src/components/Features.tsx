@@ -1,40 +1,35 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 type FeatureCard = {
   title: string;
-  imagePrompt: string;
+  image: string;
 };
 
 const features: FeatureCard[] = [
   {
     title: "Block by Default",
-    imagePrompt:
-      "minimal dark phone screen showing locked app icons with padlock symbols, modern mobile UI, dark mode aesthetic, orange accent color, clean design",
+    image: "/features/block-by-default.png",
   },
   {
     title: "Real Brain Challenges",
-    imagePrompt:
-      "brain puzzle game interface on phone screen, memory card matching game, modern dark UI, orange highlights, sleek mobile app design",
+    image: "/features/real-brain-challenges.png",
   },
   {
     title: "A Coin Economy You Control",
-    imagePrompt:
-      "digital wallet with gold coins interface on phone, coin economy dashboard, dark finance app UI, orange accent, modern fintech design",
+    image: "/features/coin-economy-you-control.png",
   },
   {
     title: "Weekly Budget Insights",
-    imagePrompt:
-      "analytics dashboard bar chart and graphs on mobile, weekly screen time report, dark data viz UI, orange chart lines, modern analytics",
+    image: "/features/weekly-budget-insights.png",
   },
   {
     title: "Custom App Pricing",
-    imagePrompt:
-      "mobile settings screen with sliders and toggles, custom pricing controls, dark UI design, orange accent color, sleek app interface",
+    image: "/features/custom-app-pricing.png",
   },
   {
     title: "Streaks That Mean Something",
-    imagePrompt:
-      "trophy and flame icon streak dashboard on mobile, achievement tiers, dark gamification UI, vibrant orange accents, modern achievement screen",
+    image: "/features/streaks-that-mean-something.png",
   },
 ];
 
@@ -58,20 +53,18 @@ function FeatureCard({
   index: number;
   widthClass: string;
 }) {
-  const imageUrl = `https://coreva-normal.trae.ai/api/ide/v1/text_to_image?prompt=${encodeURIComponent(feature.imagePrompt)}&image_size=landscape_16_9`;
-
   return (
     <Reveal delay={index * 80}>
       <div
         className={`w-full sm:shrink-0 ${widthClass} group relative h-full min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] overflow-hidden rounded-2xl border border-border bg-surface hover:border-accent/40 transition-all duration-300`}
       >
         <div className='absolute inset-0'>
-          <img
-            src={imageUrl}
-            width={150}
-            height={100}
+          <Image
+            src={feature.image}
             alt={feature.title}
-            className='w-full h-full object-cover opacity-60 group-hover:opacity-75 transition-opacity duration-500'
+            fill
+            sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+            className='object-cover opacity-60 group-hover:opacity-75 transition-opacity duration-500'
           />
           <div className='absolute inset-0 bg-linear-to-t from-bg via-bg/80 to-bg/10' />
         </div>

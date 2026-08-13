@@ -6,7 +6,7 @@ import Reveal from "./Reveal";
 
 export default function Hero() {
   return (
-    <section id='top' className='pt-40 pb-28 px-6'>
+    <section id='top' className='pt-56 pb-28 px-6'>
       <div className='mx-auto max-w-6xl lg:max-w-7xl grid md:grid-cols-2 gap-14 lg:gap-20 items-center'>
         <Reveal>
           <div>

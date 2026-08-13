@@ -18,11 +18,11 @@ export default function Home() {
     <main className='bg-bg min-h-screen'>
       <Nav />
       <Hero />
-      <PressStrip />
+      {/* <PressStrip /> */}
       <Mission />
       <HowItWorks />
       <CoinLedger />
-      <Creators />
+      {/* <Creators /> */}
       <Reviews />
       <Features />
       <Benefits />
