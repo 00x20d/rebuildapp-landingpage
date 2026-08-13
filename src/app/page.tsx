@@ -8,7 +8,7 @@ import Creators from "@/components/Creators";
 import Reviews from "@/components/Reviews";
 import Features from "@/components/Features";
 import Benefits from "@/components/Benefits";
-import BlogTeasers from "@/components/BlogTeasers";
+//import BlogTeasers from "@/components/BlogTeasers";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -26,7 +26,7 @@ export default function Home() {
       <Reviews />
       <Features />
       <Benefits />
-      <BlogTeasers />
+      {/* <BlogTeasers / > */}
       <FAQ />
       <FinalCTA />
       <Footer />
