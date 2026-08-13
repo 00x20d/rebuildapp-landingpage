@@ -9,6 +9,7 @@ const navLinks = [
   { href: "#features", label: "Features" },
   { href: "#reviews", label: "Reviews" },
   { href: "#faq", label: "FAQ" },
+  { href: "/support", label: "Support" },
 ];
 
 export default function Nav() {
