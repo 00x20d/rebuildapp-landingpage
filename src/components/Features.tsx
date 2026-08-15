@@ -69,7 +69,7 @@ function FeatureCard({
           <div className='absolute inset-0 bg-linear-to-t from-bg via-bg/80 to-bg/10' />
         </div>
 
-        <div className='relative h-full flex flex-col justify-end p-6 sm:p-8 text-left'>
+        <div className='absolute inset-0 flex flex-col justify-end p-6 sm:p-8 text-left z-10'>
           <h3 className='font-display font-semibold text-[20px] sm:text-[24px] lg:text-[28px] text-text-primary'>
             {feature.title}
           </h3>
