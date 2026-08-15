@@ -1,62 +1,92 @@
-import { Apple, PlayCircle } from "lucide-react";
-import PhoneFrame from "./PhoneFrame";
-import PhoneMockup from "./PhoneMockup";
-import { DashboardScreen } from "./PhoneScreens";
+import Image from "next/image";
+import { Download } from "lucide-react";
 import Reveal from "./Reveal";
 
 export default function Hero() {
   return (
-    <section id='top' className='pt-56 pb-28 px-6'>
-      <div className='mx-auto max-w-6xl lg:max-w-7xl grid md:grid-cols-2 gap-14 lg:gap-20 items-center'>
+    <section id='top' className='relative pt-32 pb-8 overflow-hidden'>
+      {/* Top text — centered */}
+      <div className='mx-auto max-w-4xl px-6 text-center'>
         <Reveal>
-          <div>
-            <h1 className='font-display font-semibold text-[40px] sm:text-[52px] leading-[1.05] tracking-tight text-text-primary'>
-              Every app starts locked.
+          <div className='flex flex-col items-center'>
+            <h1 className='font-display font-extrabold tracking-wide text-[40px] sm:text-[56px] lg:text-[64px] leading-[1.02] tracking-tight text-text-primary'>
+              The #1 App For
               <br />
-              <span className='text-text-secondary'>
-                You earn your way back in.
-              </span>
+              <span className='text-accent'>Cutting Screen Time</span>
             </h1>
 
-            <p className='mt-6 text-[16px] leading-relaxed text-text-secondary max-w-md'>
-              Rebuild blocks the apps that eat your day by default. Solve a
-              short brain challenge, earn screen time coins, and spend them on
-              the time you actually want, not the time an algorithm picked for
-              you.
+            <p className='mt-4 text-[14px] sm:text-[15px] text-text-secondary'>
+              Join over 2,000+ members rebuilding their attention
+              {/* TODO: replace with the real member count once available */}
             </p>
 
-            <div className='mt-9 flex flex-col sm:flex-row items-start sm:items-center gap-3'>
-              <a
-                href='#get'
-                className='flex items-center gap-2 rounded-full bg-text-primary text-bg text-[14px] font-medium px-5 py-3 hover:bg-accent transition-colors'
-              >
-                <Apple size={16} />
-                Download for iOS
-              </a>
-              <a
-                href='#get'
-                className='flex items-center gap-2 rounded-full border border-border text-text-primary text-[14px] font-medium px-5 py-3 hover:border-accent/50 transition-colors'
-              >
-                <PlayCircle size={16} />
-                Android waitlist
-              </a>
-            </div>
-          </div>
-        </Reveal>
-
-        <Reveal delay={150}>
-          <div className='relative'>
-            <div className='hidden sm:block absolute -right-6 -top-6 w-[240px] rotate-6 opacity-70 scale-95'>
-              <PhoneFrame label='dashboard' size='compact'>
-                <DashboardScreen />
-              </PhoneFrame>
-            </div>
-            <div className='relative -rotate-3'>
-              <PhoneMockup />
-            </div>
+            {/* App Store badge — TODO: replace src + href with the real listing */}
+            <a
+              href='https://apps.apple.com/app/id6780354301'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-7 inline-block'
+            >
+              <Image
+                src='/hero/app-store-badge.svg'
+                alt='Download on the App Store'
+                width={160}
+                height={52}
+                className='h-10 w-auto'
+                priority
+              />
+            </a>
           </div>
         </Reveal>
       </div>
+
+      {/* Visual — full-width app-icons background + phone mockup, bottom clipped */}
+      <Reveal delay={150}>
+        <div className='relative mt-0 sm:mt-4'>
+          {/* Background: scattered app icons spanning full screen width */}
+          <div className='absolute inset-0 opacity-80'>
+            {/* unoptimized: serve the raw file so swapping this placeholder in
+                /public shows up immediately instead of hitting Next's image cache */}
+            <Image
+              src='/hero/logo-background.png'
+              alt=''
+              fill
+              sizes='100vw'
+              className='object-cover'
+              priority
+              unoptimized
+            />
+          </div>
+
+          {/* Fade the top of the icon grid into the page bg, transparent by mid-image */}
+          <div className='absolute inset-0 bg-linear-to-b from-bg via-bg/75 via-45% to-transparent to-60%' />
+
+          {/* Phone mockup — fixed height so its bottom is cut off */}
+          <div className='relative mx-auto w-[320px] sm:w-100 lg:w-115 h-105 sm:h-130 lg:h-165 overflow-hidden'>
+            <Image
+              src='/hero/phone-mockup.svg'
+              alt='Rebuild app on a phone'
+              width={360}
+              height={760}
+              className='w-full h-auto'
+              priority
+            />
+          </div>
+        </div>
+      </Reveal>
+
+      {/* Download CTA — pulled up to overlap the clipped edge */}
+      <Reveal delay={250}>
+        <div className='px-6 mt-16 flex justify-center'>
+          <a
+            href='#get'
+            className='inline-flex items-center gap-2 rounded-full bg-text-primary text-bg text-[14px] font-medium px-6 py-3 hover:bg-accent transition-colors'
+          >
+            <Download size={16} />
+            Download on iOS
+          </a>
+        </div>
+      </Reveal>
     </section>
   );
 }

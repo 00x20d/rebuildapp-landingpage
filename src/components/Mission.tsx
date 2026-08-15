@@ -178,7 +178,9 @@ export default function Mission() {
       if (listenersAttached) return;
       listenersAttached = true;
       window.addEventListener("wheel", handleWheel, { passive: false });
-      window.addEventListener("touchstart", handleTouchStart, { passive: true });
+      window.addEventListener("touchstart", handleTouchStart, {
+        passive: true,
+      });
       window.addEventListener("touchmove", handleTouchMove, { passive: false });
       window.addEventListener("touchend", handleTouchEnd, { passive: true });
     };
@@ -216,7 +218,7 @@ export default function Mission() {
   return (
     <section
       ref={sectionRef}
-      className='relative py-28 px-6 border-t border-border-soft'
+      className='relative py-28 px-6 border-border-soft'
       style={{ minHeight: "200vh" }}
     >
       <div

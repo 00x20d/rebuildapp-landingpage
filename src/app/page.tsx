@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import Statement from "@/components/Statement";
 import PressStrip from "@/components/PressStrip";
 import Mission from "@/components/Mission";
 import HowItWorks from "@/components/HowItWorks";
@@ -18,6 +19,7 @@ export default function Home() {
     <main className='bg-bg min-h-screen'>
       <Nav />
       <Hero />
+      <Statement />
       {/* <PressStrip /> */}
       <Mission />
       <HowItWorks />
