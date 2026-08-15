@@ -48,7 +48,7 @@ export default function Hero() {
             {/* unoptimized: serve the raw file so swapping this placeholder in
                 /public shows up immediately instead of hitting Next's image cache */}
             <Image
-              src='/hero/logo-background.png'
+              src='/hero/logo-background.webp'
               alt=''
               fill
               sizes='100vw'
