@@ -62,7 +62,7 @@ export default function Hero() {
           <div className='absolute inset-0 bg-linear-to-b from-bg via-bg/75 via-45% to-transparent to-60%' />
 
           {/* Phone mockup — fixed height so its bottom is cut off */}
-          <div className='relative mx-auto w-65 sm:w-100 lg:w-115 h-120 sm:h-130 lg:h-165 overflow-hidden'>
+          <div className='relative mx-auto mt-12 w-75 sm:w-100 lg:w-115 h-120 sm:h-130 lg:h-165 overflow-hidden'>
             <Image
               src='/hero/phone-mockup.svg'
               alt='Rebuild app on a phone'
