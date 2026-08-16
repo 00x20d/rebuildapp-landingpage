@@ -62,7 +62,7 @@ export default function Hero() {
           <div className='absolute inset-0 bg-linear-to-b from-bg via-bg/75 via-45% to-transparent to-60%' />
 
           {/* Phone mockup — fixed height so its bottom is cut off */}
-          <div className='relative mx-auto w-[320px] sm:w-100 lg:w-115 h-105 sm:h-130 lg:h-165 overflow-hidden'>
+          <div className='relative mx-auto w-65 sm:w-100 lg:w-115 h-120 sm:h-130 lg:h-165 overflow-hidden'>
             <Image
               src='/hero/phone-mockup.svg'
               alt='Rebuild app on a phone'
@@ -71,6 +71,13 @@ export default function Hero() {
               className='w-full h-auto'
               priority
             />
+            {/* Fade the bottom of the phone into the page bg.
+                phone-mockup.svg has ~9.3% horizontal padding baked into its
+                viewBox (2625 wide, content rect 2140 starting at x=243), so we
+                inset by the same amount on each side to match the asset's
+                actual width. The fade stops ~12% from the bottom (~1.5 cm at
+                typical DPI) instead of spanning half the height. */}
+            <div className='absolute inset-x-[9%] inset-y-0 bg-linear-to-t from-bg to-transparent to-12%' />
           </div>
         </div>
       </Reveal>
