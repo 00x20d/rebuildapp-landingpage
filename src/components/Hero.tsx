@@ -42,9 +42,9 @@ export default function Hero() {
 
       {/* Visual — full-width app-icons background + phone mockup, bottom clipped */}
       <Reveal delay={150}>
-        <div className='relative mt-0 sm:mt-4'>
+        <div className='relative mt-8 sm:mt-4'>
           {/* Background: scattered app icons spanning full screen width */}
-          <div className='absolute inset-0 opacity-80'>
+          <div className='absolute inset-0 mt-12 opacity-80'>
             {/* unoptimized: serve the raw file so swapping this placeholder in
                 /public shows up immediately instead of hitting Next's image cache */}
             <Image
