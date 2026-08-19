@@ -11,11 +11,11 @@ const faqs = [
   },
   {
     q: "Is Rebuild free?",
-    a: "Rebuild is free to download and set up your first blocked app. Additional features may be part of a paid tier. Final pricing will be confirmed before launch.",
+    a: "Rebuild is free to download and set up your first 4 blocked app. Additional features may be part of a paid tier.",
   },
   {
     q: "How does the app blocking work?",
-    a: "You choose which apps or categories to block. Rebuild uses Apple's Screen Time API to enforce the block at the system level, so it holds even if you try to remove the app.",
+    a: "You choose which apps to block. Rebuild uses Apple's Screen Time API to enforce the block at the system level, so it holds even if you try to remove the app.",
   },
   {
     q: "What are the brain challenges?",
@@ -23,11 +23,7 @@ const faqs = [
   },
   {
     q: "How does the coin economy work?",
-    a: "Every challenge you complete earns coins. Every app unlock costs coins. You set how many minutes an unlock buys and how much it costs, so the budget reflects your own priorities.",
-  },
-  {
-    q: "Can I change how much an app costs to unlock?",
-    a: "Yes. You price your own apps. Make the ones you're trying to cut back on expensive, and leave the ones you actually need cheap or free.",
+    a: "Every challenge you complete earns coins. Every app unlock costs coins. You set how many minutes an unlock buys, so the budget reflects your own priorities.",
   },
   {
     q: "Is my data private?",

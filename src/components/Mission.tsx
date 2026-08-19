@@ -5,9 +5,9 @@ import Reveal from "./Reveal";
 
 const sentences = [
   "We built Rebuild",
-  "because screen time didn't need another timer, it needed a budget.",
-  "Every app starts locked, so opening it is a choice you make, not one an algorithm makes for you.",
-  "Every unlock costs something, so it gets spent on purpose.",
+  "for people who are tired of feeling pulled through their day by a screen.",
+  "It helps you become someone who chooses where their attention goes,",
+  "so your phone supports the life you want instead of quietly taking you away from it.",
 ];
 
 const stats = [
