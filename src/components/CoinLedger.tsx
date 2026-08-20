@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 const transactions = [
@@ -49,82 +50,34 @@ export default function CoinLedger() {
           <Reveal>
             <div>
               <h2 className='font-display font-semibold text-[32px] sm:text-[36px] tracking-tight text-text-primary'>
-                Every coin, itemized
+                Be the one who decides
               </h2>
-              <p className='mt-3 text-[15px] text-text-secondary leading-relaxed max-w-sm'>
-                Rebuild treats attention like money. Every challenge you solve
-                is a deposit. Every app you unlock is a withdrawal. Nothing
-                happens off the books.
+              <p className='mt-3 text-[16px] text-text-secondary leading-relaxed max-w-sm'>
+                Rebuild creates a moment of intention between the impulse and
+                the scroll, helping you become more present, focused, and in
+                control of your phone use.
               </p>
-              <div className='mt-8 flex items-center gap-8 lg:gap-12'>
-                <div>
-                  <div className='text-[12px] text-text-tertiary mb-1'>
-                    Net this week
-                  </div>
-                  <div className='font-mono tabular text-[28px] sm:text-[32px] text-accent'>
-                    {total >= 0 ? "+" : ""}
-                    {total}
-                  </div>
-                </div>
-                <div>
-                  <div className='text-[12px] text-text-tertiary mb-1'>
-                    Challenges solved
-                  </div>
-                  <div className='font-mono tabular text-[28px] sm:text-[32px] text-text-primary'>
-                    {transactions.filter((t) => t.kind === "earn").length}
-                  </div>
-                </div>
-              </div>
             </div>
           </Reveal>
 
           <Reveal delay={120}>
-            <div className='rounded-2xl border border-border bg-surface overflow-hidden'>
-              <div className='flex items-center justify-between px-6 py-4 border-b border-border-soft'>
-                <span className='text-[13px] font-medium text-text-primary'>
-                  Coin statement
-                </span>
-                <span className='text-[11px] font-mono tabular text-text-tertiary'>
-                  this week
-                </span>
-              </div>
-
-              <div className='divide-y divide-border-soft'>
-                {transactions.map((t) => (
-                  <div
-                    key={t.label}
-                    className='flex items-center justify-between px-6 py-3.5'
-                  >
-                    <div className='min-w-0'>
-                      <div className='text-[13.5px] text-text-primary truncate'>
-                        {t.label}
-                      </div>
-                      <div className='text-[11.5px] text-text-tertiary'>
-                        {t.detail}
-                      </div>
-                    </div>
-                    <div
-                      className={`font-mono tabular text-[13.5px] shrink-0 pl-4 ${
-                        t.kind === "earn"
-                          ? "text-accent"
-                          : "text-text-secondary"
-                      }`}
-                    >
-                      {t.delta > 0 ? "+" : ""}
-                      {t.delta}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className='relative aspect-3/4 w-full overflow-hidden'>
+              <Image
+                src='/howitworks/coin-ledger.webp'
+                alt='Coin ledger statement for the week'
+                fill
+                sizes='(max-width: 768px) 100vw, 50vw'
+                className='object-contain p-3 sm:p-5'
+              />
             </div>
           </Reveal>
         </div>
 
         <Reveal delay={200}>
-          <div className="mt-16 flex justify-center">
+          <div className='mt-16 flex justify-center'>
             <a
-              href="#get"
-              className="min-w-[200px] sm:min-w-[240px] text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors"
+              href='#get'
+              className='min-w-[200px] sm:min-w-[240px] text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
             >
               Get Rebuild
             </a>

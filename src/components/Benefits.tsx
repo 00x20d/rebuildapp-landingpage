@@ -34,7 +34,7 @@ export default function Benefits() {
                   className='text-accent shrink-0'
                   strokeWidth={1.75}
                 />
-                <span className='text-[14px] text-text-primary leading-snug'>
+                <span className='text-[16px]  text-text-primary leading-snug'>
                   {b.label}
                 </span>
               </div>

@@ -52,7 +52,7 @@ export default function Footer() {
                 className='h-7 sm:h-8 w-auto'
               />
             </div>
-            <p className='text-[13px] text-text-secondary leading-relaxed max-w-55'>
+            <p className='text-[16px] text-text-secondary leading-relaxed max-w-55'>
               Screen time you earn back, spent on purpose.
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function Footer() {
                   <Link
                     key={l.label}
                     href={l.href}
-                    className='text-[13.5px] text-text-secondary hover:text-text-primary transition-colors'
+                    className='text-[16px] text-text-secondary hover:text-text-primary transition-colors'
                   >
                     {l.label}
                   </Link>

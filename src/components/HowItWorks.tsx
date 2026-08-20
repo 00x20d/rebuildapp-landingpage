@@ -1,36 +1,24 @@
-import PhoneFrame from "./PhoneFrame";
-import {
-  DashboardScreen,
-  ChallengeScreen,
-  UnlockScreen,
-  LedgerMiniScreen,
-} from "./PhoneScreens";
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 const steps = [
   {
+    image: "/howitworks/dashboard.webp",
     label: "dashboard",
-    Screen: DashboardScreen,
     title: "See your budget at a glance",
     body: "Your streak, balance, and weekly challenges all in one place. No digging through settings, just clarity.",
   },
   {
+    image: "/howitworks/challenge.webp",
     label: "challenge",
-    Screen: ChallengeScreen,
     title: "Earn coins with real brain work",
     body: "30 to 60 second memory, pattern, and focus exercises. They rotate and get harder, so it stays real, not routine.",
   },
   {
+    image: "/howitworks/unlock.webp",
     label: "unlock",
-    Screen: UnlockScreen,
     title: "Spend coins on what matters",
     body: "Unlock apps for set minutes at set coin costs. You see the price upfront, every single time.",
-  },
-  {
-    label: "insights",
-    Screen: LedgerMiniScreen,
-    title: "Track it like a budget",
-    body: "A clear ledger of what you earned and what you spent. Catch patterns before they become habits.",
   },
 ];
 
@@ -49,7 +37,7 @@ export default function HowItWorks() {
           </div>
         </Reveal>
 
-        <div className='flex flex-col gap-24 lg:gap-32'>
+        <div className='flex flex-col gap-8 lg:gap-12'>
           {steps.map((step, i) => (
             <div
               key={step.label}
@@ -58,9 +46,14 @@ export default function HowItWorks() {
               }`}
             >
               <Reveal>
-                <PhoneFrame label={step.label}>
-                  <step.Screen />
-                </PhoneFrame>
+                <Image
+                  src={step.image}
+                  alt={step.title}
+                  width={560}
+                  height={1180}
+                  sizes='(max-width: 640px) 320px, (max-width: 1024px) 460px, 560px'
+                  className='mx-auto w-[320px] sm:w-115 lg:w-140 h-auto'
+                />
               </Reveal>
 
               <Reveal delay={100}>
@@ -77,7 +70,7 @@ export default function HowItWorks() {
                   <h3 className='font-display font-medium text-[22px] sm:text-[24px] lg:text-[28px] text-text-primary mb-3'>
                     {step.title}
                   </h3>
-                  <p className='text-[14.5px] sm:text-[15.5px] leading-relaxed text-text-secondary max-w-sm'>
+                  <p className='text-[16px] sm:text-[18px] leading-relaxed text-text-secondary max-w-sm'>
                     {step.body}
                   </p>
                 </div>
@@ -90,7 +83,7 @@ export default function HowItWorks() {
           <div className='mt-20 flex justify-center'>
             <a
               href='#get'
-              className='min-w-[200px] sm:min-w-[240px] text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
+              className='min-w-[200px] sm:min-w-[240px] text-center rounded-full bg-text-primary text-bg text-[16px] font-medium px-10 py-4 hover:bg-accent transition-colors'
             >
               Get Rebuild
             </a>

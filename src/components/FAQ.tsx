@@ -47,7 +47,7 @@ export default function FAQ() {
           </h2>
         </Reveal>
 
-        <div className='flex flex-col divide-y divide-border-soft border-t border-b border-border-soft'>
+        <div className='flex flex-col divide-y border-border-soft border-t border-b'>
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
@@ -74,7 +74,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className='overflow-hidden'>
-                    <p className='text-[13.5px] leading-relaxed text-text-secondary pr-8'>
+                    <p className='text-[14px] leading-relaxed text-text-secondary pr-8'>
                       {f.a}
                     </p>
                   </div>

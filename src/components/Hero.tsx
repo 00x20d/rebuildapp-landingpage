@@ -15,8 +15,8 @@ export default function Hero() {
               <span className='text-accent'>Cutting Screen Time</span>
             </h1>
 
-            <p className='mt-4 text-[14px] sm:text-[15px] text-text-secondary'>
-              Join over 2,000+ members rebuilding their attention
+            <p className='mt-4 text-[16px] sm:text-[18px] text-text-secondary'>
+              Join many other members rebuilding their attention
               {/* TODO: replace with the real member count once available */}
             </p>
 

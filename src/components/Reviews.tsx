@@ -34,7 +34,7 @@ export default function Reviews() {
       <div className='mx-auto max-w-6xl lg:max-w-7xl'>
         <Reveal>
           <div className='text-center mb-10 lg:mb-14'>
-            <span className="inline-block rounded-full border border-border-soft bg-surface px-5 py-2 text-[13px] sm:text-[14px] font-medium text-text-secondary mb-5">
+            <span className='inline-block rounded-full border border-border-soft bg-surface px-5 py-2 text-[13px] sm:text-[14px] font-medium text-text-secondary mb-5'>
               Reviews
             </span>
             <h2 className='font-display font-semibold text-[32px] sm:text-[38px] lg:text-[44px] tracking-tight text-text-primary max-w-3xl mx-auto leading-tight'>
@@ -51,13 +51,13 @@ export default function Reviews() {
                   {Array.from({ length: 5 }).map((_, s) => (
                     <Star
                       key={s}
-                      size={14}
+                      size={16}
                       fill='currentColor'
                       strokeWidth={0}
                     />
                   ))}
                 </div>
-                <p className='text-[14.5px] leading-relaxed text-text-secondary flex-1'>
+                <p className=' sm:text-[16px] leading-relaxed text-text-secondary flex-1'>
                   &ldquo;{r.quote}&rdquo;
                 </p>
                 <div className='mt-5 flex items-center gap-3'>
