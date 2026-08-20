@@ -46,7 +46,7 @@ export default function Benefits() {
           <div className='mt-16 flex justify-center'>
             <a
               href='#get'
-              className='min-w-[200px] sm:min-w-[240px] text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
+              className='min-w-50 sm:min-w-60 text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
             >
               Get Rebuild
             </a>
