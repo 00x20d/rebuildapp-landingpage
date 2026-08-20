@@ -56,7 +56,7 @@ function FeatureCard({
   return (
     <Reveal delay={index * 80}>
       <div
-        className={`w-full sm:shrink-0 ${widthClass} group relative h-full min-h-[280px] sm:min-h-[320px] lg:min-h-[380px] overflow-hidden rounded-2xl border border-border bg-surface hover:border-accent/40 transition-all duration-300`}
+        className={`w-full sm:shrink-0 ${widthClass} group relative h-full min-h-70 sm:min-h-80 lg:min-h-95 overflow-hidden rounded-2xl border border-border bg-surface hover:border-accent/40 transition-all duration-300`}
       >
         <div className='absolute inset-0'>
           <Image
@@ -124,7 +124,7 @@ export default function Features() {
           <div className='mt-20 flex justify-center'>
             <a
               href='#get'
-              className='min-w-[200px] sm:min-w-[240px] text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
+              className='min-w-50 sm:min-w-60 text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
             >
               Get Rebuild
             </a>

@@ -1,48 +1,7 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 
-const transactions = [
-  {
-    label: "Memory sprint, 6 cards",
-    detail: "Challenge completed",
-    delta: 6,
-    kind: "earn" as const,
-  },
-  {
-    label: "Pattern match, hard",
-    detail: "Challenge completed",
-    delta: 9,
-    kind: "earn" as const,
-  },
-  {
-    label: "Instagram, 12 min",
-    detail: "Unlocked",
-    delta: -12,
-    kind: "spend" as const,
-  },
-  {
-    label: "Focus hold, 45s",
-    detail: "Challenge completed",
-    delta: 5,
-    kind: "earn" as const,
-  },
-  {
-    label: "YouTube, 8 min",
-    detail: "Unlocked",
-    delta: -8,
-    kind: "spend" as const,
-  },
-  {
-    label: "Number recall, 8 digits",
-    detail: "Challenge completed",
-    delta: 8,
-    kind: "earn" as const,
-  },
-];
-
 export default function CoinLedger() {
-  const total = transactions.reduce((sum, t) => sum + t.delta, 0);
-
   return (
     <section id='ledger' className='py-28 px-6 border-t border-border-soft'>
       <div className='mx-auto max-w-6xl lg:max-w-7xl'>

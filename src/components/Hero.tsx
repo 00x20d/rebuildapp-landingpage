@@ -9,7 +9,7 @@ export default function Hero() {
       <div className='mx-auto max-w-4xl px-6 text-center'>
         <Reveal>
           <div className='flex flex-col items-center'>
-            <h1 className='font-display font-extrabold tracking-wide text-[40px] sm:text-[56px] lg:text-[64px] leading-[1.02] tracking-tight text-text-primary'>
+            <h1 className='font-display font-extrabold tracking-wide text-[40px] sm:text-[56px] lg:text-[64px] leading-[1.02] text-text-primary'>
               The #1 App For
               <br />
               <span className='text-accent'>Cutting Screen Time</span>
