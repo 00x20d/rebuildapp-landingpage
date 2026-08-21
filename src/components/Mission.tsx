@@ -11,8 +11,8 @@ const sentences = [
 ];
 
 const stats = [
-  { value: "52 min", label: "Average daily screen time reduced" },
-  { value: "84%", label: "Still active after 30 days" },
+  { value: "124 min", label: "Average daily screen time reduced" },
+  { value: "81%", label: "Still active after 30 days" },
   { value: 28600, label: "Brain challenges completed", isCounter: true },
 ];
 
@@ -268,8 +268,8 @@ export default function Mission() {
           <Reveal delay={200}>
             <div className='mt-14 flex justify-center'>
               <a
-                href='#get'
-                className='min-w-[200px] sm:min-w-[240px] text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
+                href='https://apps.apple.com/app/id6780354301'
+                className='min-w-50 sm:min-w-60 text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
               >
                 Get Rebuild
               </a>

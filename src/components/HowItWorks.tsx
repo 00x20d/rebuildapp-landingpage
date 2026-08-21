@@ -5,20 +5,20 @@ const steps = [
   {
     image: "/howitworks/dashboard.webp",
     label: "dashboard",
-    title: "See your budget at a glance",
-    body: "Your streak, balance, and weekly challenges all in one place. No digging through settings, just clarity.",
+    title: "Start seeing your time differently",
+    body: "A clear picture of the habits you are building. So using your phone with intention becomes something you can actually feel proud of.",
   },
   {
     image: "/howitworks/challenge.webp",
     label: "challenge",
-    title: "Earn coins with real brain work",
-    body: "30 to 60 second memory, pattern, and focus exercises. They rotate and get harder, so it stays real, not routine.",
+    title: "Earn back control of your attention",
+    body: "Small moments of focus that pull you out of autopilot and remind you that your attention is yours to direct.",
   },
   {
     image: "/howitworks/unlock.webp",
     label: "unlock",
-    title: "Spend coins on what matters",
-    body: "Unlock apps for set minutes at set coin costs. You see the price upfront, every single time.",
+    title: "Choose what is worth your time",
+    body: "Instead of opening apps by reflex, you pause and decide. Over time, that pause becomes the habit of being more present in your own life.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function HowItWorks() {
         <Reveal delay={200}>
           <div className='mt-20 flex justify-center'>
             <a
-              href='#get'
+              href='https://apps.apple.com/app/id6780354301'
               className='min-w-50 sm:min-w-60 text-center rounded-full bg-text-primary text-bg text-[16px] font-medium px-10 py-4 hover:bg-accent transition-colors'
             >
               Get Rebuild

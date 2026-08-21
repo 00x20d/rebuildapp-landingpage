@@ -45,7 +45,7 @@ export default function Nav() {
         </nav>
 
         <a
-          href='#get'
+          href='https://apps.apple.com/app/id6780354301'
           className='hidden md:inline-block rounded-full bg-text-primary text-bg text-[14px] font-medium px-5 py-2.5 hover:bg-accent transition-colors shrink-0'
         >
           Download
@@ -53,7 +53,7 @@ export default function Nav() {
 
         <div className='md:hidden flex items-center gap-2 shrink-0'>
           <a
-            href='#get'
+            href='https://apps.apple.com/app/id6780354301'
             className='rounded-full bg-text-primary text-bg text-[12px] sm:text-[13px] font-medium px-3 sm:px-4 py-1.5 sm:py-2 hover:bg-accent transition-colors whitespace-nowrap'
           >
             Download

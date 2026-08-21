@@ -16,7 +16,7 @@ export default function Hero() {
             </h1>
 
             <p className='mt-4 text-[16px] sm:text-[18px] text-text-secondary'>
-              Join many other members rebuilding their attention
+              Join the community and take back control of your time
               {/* TODO: replace with the real member count once available */}
             </p>
 
@@ -86,7 +86,7 @@ export default function Hero() {
       <Reveal delay={250}>
         <div className='px-6 mt-16 flex justify-center'>
           <a
-            href='#get'
+            href='https://apps.apple.com/app/id6780354301'
             className='inline-flex items-center gap-2 rounded-full bg-text-primary text-bg text-[14px] font-medium px-6 py-3 hover:bg-accent transition-colors'
           >
             <Download size={16} />

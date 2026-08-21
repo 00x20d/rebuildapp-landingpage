@@ -76,7 +76,7 @@ export default function Reviews() {
         <Reveal delay={200}>
           <div className='mt-16 flex justify-center'>
             <a
-              href='#get'
+              href='https://apps.apple.com/app/id6780354301'
               className='min-w-50 sm:min-w-60 text-center rounded-full bg-text-primary text-bg text-[15px] font-medium px-10 py-4 hover:bg-accent transition-colors'
             >
               Get Rebuild

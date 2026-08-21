@@ -56,7 +56,7 @@ export default function FAQ() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className='w-full flex items-center justify-between gap-4 py-5 text-left'
                 >
-                  <span className='text-[14.5px] font-medium text-text-primary'>
+                  <span className='text-[16px] font-medium text-text-primary'>
                     {f.q}
                   </span>
                   <ChevronDown
@@ -74,7 +74,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className='overflow-hidden'>
-                    <p className='text-[14px] leading-relaxed text-text-secondary pr-8'>
+                    <p className='text-[15px] leading-relaxed text-text-secondary pr-8'>
                       {f.a}
                     </p>
                   </div>

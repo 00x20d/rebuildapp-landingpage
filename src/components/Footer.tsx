@@ -53,7 +53,7 @@ export default function Footer() {
               />
             </div>
             <p className='text-[16px] text-text-secondary leading-relaxed max-w-55'>
-              Screen time you earn back, spent on purpose.
+              A more intentional life starts with one choice.
             </p>
           </div>
 
@@ -81,14 +81,6 @@ export default function Footer() {
           <p className='text-[12px] text-text-tertiary'>
             © 2026 Rebuild. All rights reserved.
           </p>
-          <div className='flex items-center gap-3 text-[12px] text-text-tertiary'>
-            <span className='rounded-md border border-border px-2.5 py-1'>
-              App Store
-            </span>
-            <span className='rounded-md border border-border px-2.5 py-1'>
-              Google Play
-            </span>
-          </div>
         </div>
       </div>
     </footer>
